@@ -9,4 +9,6 @@ public interface AvaliacaoService {
 
   Avaliacao findAvaliacaoPorNomeComPerguntas(String nome);
 
+  Avaliacao salvar(Avaliacao avaliacao);
+
 }

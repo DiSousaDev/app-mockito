@@ -7,4 +7,6 @@ public interface AvaliacaoRepository {
 
   List<Avaliacao> findAll();
 
+  Avaliacao salvar(Avaliacao avaliacao);
+
 }

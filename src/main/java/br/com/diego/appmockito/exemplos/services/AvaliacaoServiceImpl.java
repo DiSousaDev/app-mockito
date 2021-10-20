@@ -38,4 +38,12 @@ public class AvaliacaoServiceImpl implements AvaliacaoService {
     return avaliacao;
   }
 
+  @Override
+  public Avaliacao salvar(Avaliacao avaliacao){
+    if(!avaliacao.getPerguntas().isEmpty()) {
+      perguntaRepository.salvarPerguntas(avaliacao.getPerguntas());
+    }
+    return avaliacaoRepository.salvar(avaliacao);
+  }
+
 }
